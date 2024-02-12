@@ -1,0 +1,780 @@
+*{
+    padding: 0;
+    margin: 0;
+   box-sizing:border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+#backgroundgreen{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -2;
+   
+}
+.searchButton{
+    z-index: 2;
+    color: #006953;
+   
+    padding: 4px ;
+    position: fixed;
+    top:0;
+    right: 0;
+}
+.searchBar {
+    position: fixed;
+    top:0;
+    right: 0;
+   background-color:#E3CAA8;
+    z-index: 1;
+    padding: 15px;
+    width: 32px;
+    border-radius: 4px;
+    height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+  }
+  #searchForm {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    color: white;
+    transition: all .5s ease;
+    z-index: -1;
+  }
+  .searchBar button {
+    background-color:#006953!important;
+    width: 100%;
+    height: 32px;
+    border-radius: 4px;
+    border: 0px;
+  }
+  .searchBar h1{
+    color: #006953;
+  }
+  .searchBar input{
+    height: 32px;
+    margin-top: 32px;
+  }
+  .searchBar .fa-search{
+    color: #E3CAA8;
+  }
+  .searchIcon{
+color: #006953;
+position: fixed;
+    top:0;
+    right: 0;
+    padding: 8px;
+  }
+  .searchButton {
+    position: relative;
+  }
+/*...... top menu.........................*/
+header{
+    position:absolute;
+   width: 100%;
+    top: 0px;
+   /*background-color: brown;*/
+   
+    cursor: pointer;
+}
+.logo{
+    padding: 16px;
+    padding-left: 0px;
+    font-size: 24px;
+    color: #006953;
+   /* background-color: chocolate;*/
+   margin-right: 256px;
+}
+nav{
+   
+  /* background-color:bisque;*/
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+   padding: 0px 160px;
+}
+nav a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+   
+}
+header #contactbtn{
+    margin-top: 24px;
+}
+
+#header-ul1{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+   justify-content:space-between;
+  
+ /* background-color:brown;*/
+   
+}
+a{
+    cursor: pointer;
+}
+#header-ul1 li{
+    list-style: none;
+   padding: 16px 32px;
+   cursor: pointer;
+   /*background-color: brown;*/
+}
+
+
+#header-nav-li3-img{
+    width:16px;
+    height: 16px;
+   /* background-color: #E3CAA8;*/
+}
+#header-nav-ul1-div2{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+  /* background-color: aqua;*/
+}
+header li{
+    list-style: none;
+   
+   
+}
+header li:hover{
+    border-bottom: solid 4px #fff;
+  
+    transition: all 0.3s;
+}
+header #contactbtn a{
+    background-color: #fff;
+    color: #006953;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+header #contactbtn a:hover{
+    background-color:#006953;
+    border: solid 1px #fff;
+    color: #fff;
+    transition: all 0.3s;
+}
+#header-ul2{
+    display: none;
+    flex-direction: column;
+   align-items: flex-start;
+    color: #fff;
+    border: solid 1px #fff;
+    /*background-color: bisque;*/
+}
+#header-nav-li{
+   /* scroll-padding-right: 8px;*/
+}
+
+/*......... top menu........................*/
+/*......... hero section........................*/
+main{
+    margin-top: 176px;
+    margin-left: 160px;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /*background-color:brown;*/
+
+}
+main p{
+    margin-top: 56px;
+    margin-bottom: 56px;
+    max-width: 446px;
+}
+#btn2-hero {
+    text-decoration: none;
+    padding: 16px 32px;
+    background-color:#fff ;
+    border:solid 2px #006953;
+    color: #006953;
+    border-radius: 4px;
+    font-size: 16px;
+   
+}
+#btn2-hero:hover{
+    background-color:#006953;
+    color:#fff;
+    border: solid 2px #fff;
+    transition: all 0.3s;
+   
+}
+#btn1-hero:hover{
+    background-color:#fff;
+    color:#006953;
+    border:solid 2px #006953;
+    transition: all 0.3s;
+}
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+   
+}
+ #btn1-hero{
+    margin-right: 32px;
+    text-decoration: none;
+    padding: 16px 32px;
+    background-color:#006953 ;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 16px;
+    border: solid 2px #fff;
+}
+main .content{
+    display: flex;
+    flex-direction: column;
+    
+    /*background-color: yellow;*/
+}
+.content h1{
+    font-size: 40px;
+    line-height: 1.2;
+}
+#hero-right{
+    /*background-color: #7cefd6;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ #hero-pic{
+ /*ackground-color: antiquewhite;*/
+   height: 534px;
+}
+ 
+#tools{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+    border-radius: 4px;
+    height: 288px;
+    background-color: #fff;
+   margin-left: 40px;
+}
+ #tools:hover  #tools-hover { 
+   
+    z-index: 999;
+    background-color: #006953;
+    transform: rotate(12deg);
+}
+#tools:hover  { 
+    z-index: -999;
+}  
+#tools-hover{
+   /* background-color: #7cefd6;*/
+    border-radius: 4px;
+    height: 288px;
+    z-index:-999 ;
+    position: absolute;
+    right: 160px;
+}  
+#tools-hover img{
+    padding:  16px;
+}                    
+#tools img{
+   padding:  16px;
+
+ 
+}
+/*.... end hero .................*/
+/*....start what i do ........... */
+#squre1{
+    position: absolute ;
+    top:750px;
+    left: 0px;
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+ #what-i-do-sec1{
+    margin: 104px 160px;
+    /*background-color: blanchedalmond;*/
+
+}
+.title1{
+    font-size: 40px;
+}
+ #what-i-do-sec2{
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .what-i-do-cart{
+    padding: 16px 32px;
+    border-radius: 4px;
+   
+    border:solid 1px #90aaa4;
+}
+.what-i-do-cart h1{
+    margin-top: 24px;
+}
+.what-i-do-p{
+   width: 280px;
+   margin-top:16px;
+}
+.what-i-do-cart:hover{
+    transform: scale(1.07);
+    transition: 0.5s ease-in-out ;
+    border:4px linear-gradient(0deg #006953 #E3CAA8);
+    
+    
+}
+/*..end  what i do .......... .........................*/
+/*..start skills & experience .......... .........................*/
+#squre2{
+    position: absolute;
+    top:1200px;
+    right: 0px;
+    opacity: 0.5;
+    transform: scale(0.7);
+}
+#skills{
+   /* background-color: antiquewhite;*/
+    margin: 104px 160px;
+}
+#skills2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 56px;
+}
+.img-skills:hover{
+ opacity: 0.7;
+ transform: scale(1.1);
+ 
+}
+/*transform: rotate(15deg);*/
+#squre3{
+    transform: scale(0.7);
+    position: absolute;
+    top:1600px;
+    opacity: 0.5;
+    left: -40px;
+}
+/*..end skills & experience .......... .........................*/
+/* start projects .............................................*/
+#Projects{
+    margin: 104px 160px;
+    
+    justify-content: space-between; 
+  /*  background-color: bisque; */
+}
+#row1{
+    margin-top: 56px;
+  /*  background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#row2{
+    margin-top: 56px;
+   /* background-color:aquamarine;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ .projects-cell{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    align-items: start;
+}
+.projects-cell p{
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.btn-projects{
+    margin-top: 40px;
+background-color: #006953;
+padding: 8px 16px;
+border-radius: 4px;
+color: #fff;
+text-decoration: none;
+border: solid 1px #006953;
+}
+.btn-projects:hover{
+    background-color: #fff;
+    border: solid 1px #006953;
+    color: #006953;
+}
+#Projects img:hover{
+    opacity: 0.9;
+    transition:all ease-in-out 0.3s;
+    
+}
+/* end projects ................................ */
+.togglecontainer {
+    padding: 15px;
+    display: none;
+    transition: all;
+   transition: linear;
+  transition-timing-function: ease-in-out;
+  }
+  .active {
+    display: block;
+   
+  }
+#four{ /*    About Me ..........................*/
+    cursor: pointer;
+    list-style: none;
+     
+    margin: 104px 160px;
+  
+    padding:16px 24px;
+}
+#four h1{
+    font-size: 40px;
+}
+#four .toggle{
+    border-bottom: solid 1px #90aaa4;
+    padding: 16px 0px;
+   
+ 
+}
+.plus_minus{
+    float: right;
+}
+/*  start footer ..........................................*/
+footer{
+    background-color: #E3CAA8;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+   
+}
+#footer-row1{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /* background-color: aqua;*/
+    margin: 16px 160px;
+   
+}
+#footer-row2{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+   /* background-color: brown;*/
+    margin: 16px 160px;
+    border-top: solid 1px rgb(57, 114, 78);
+    
+}
+ #slogan{
+    font-size: 40px;
+    max-width: 600px;
+}
+#slogan span{
+    color: #006953;
+}
+#footer-tools div{
+    padding: 8px 0px;
+}
+.footer-info{
+  padding-top: 16px;
+}
+/* end footer...........................................*/
+@media (max-width:1340px){
+    nav{
+        padding: 0px 16px;
+    }
+    .searchBar {
+        margin-right: 16px;
+    }
+    .searchIcon{
+        margin-right: 16px;
+    }
+    .logo{
+margin-right: 0px;
+    }
+    main p{
+        width :100%
+      /*  max-width:350px ;*/
+    }
+   
+    .Projects img{
+        transform: scale(0.8);
+        
+}
+}
+
+
+@media (max-width:1176px){
+    #squre1,#squre2,#squre3{
+        display: none;
+    }
+    .searchBar {
+        margin-right: 16px;
+    }
+    .searchIcon{
+        margin-right: 16px;
+    }
+    main{
+        background-color: #006953;
+        margin: 0px 16px;
+        padding-top: 104px;
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+    main p{
+        color: #fff;
+    }
+    nav{
+        background-color: #006953;
+        margin: 0px 16px;
+       /* padding-right: 24px;*/
+       padding: 0px 16px;
+    }
+    .logo{
+        color: #fff;
+        padding-left: 16px;
+    }
+    #backgroundgreen{
+        display: none;
+    }
+    #what-i-do-sec1{
+       
+      /*  background-color: brown;*/
+       margin-left: 16px ;
+       margin-right: 16px;
+    }
+    #skills{
+        margin-left: 16px ;
+       margin-right: 16px;
+        
+    }
+    
+    #Projects{
+        display: flex;
+        margin-left: 16px ;
+       margin-right: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+       /* background-color: bisque;*/
+    }
+    .projects-cell p{
+        font-size: 24px;
+        margin-bottom: 16px;
+        margin-top: 16px;;
+    }
+    .projects-cell img{
+        transform: scale(0.8);
+}
+.btn-projects{
+    margin-top: 24px;
+}
+    #slogan{
+        font-size: 32px;
+        max-width: 400px;
+    }
+}
+@media  (max-width: 1164px){
+    .searchBar {
+        margin-right: 16px;
+    }
+    .searchIcon{
+        margin-right: 16px;
+    }
+   header  ul{
+       /* display: none;*/
+    }
+    .logo{
+       color: #fff;
+       padding-left: 16px;
+    }
+ 
+ 
+#what-i-do-sec2{
+    flex-wrap: wrap ;
+    justify-content: start;
+}
+.what-i-do-cart{
+    margin-top: 16px;
+    margin-right: 16px;
+ }
+#skills2{
+    flex-wrap: wrap;
+    justify-content: space-between;
+   /* background-color: aqua;*/
+}
+
+#row1{      /*proj*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#row2{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+}/*..........................Tablet................*/
+@media (max-width: 978px){
+    .searchBar {
+        margin-right: 16px;
+    }
+    .searchIcon{
+        margin-right: 16px;
+    }
+    header ul{
+        display: none;
+    }
+    header li{
+        display: flex;
+        justify-content: space-between;
+        padding:16px 16px;
+       
+    }
+    main{
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        flex-direction: column-reverse;
+       
+     }
+     
+     #hero-right{
+        justify-content: end;
+     }
+     .hero-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    #btn1-hero, #btn2-hero{
+        width: 397px;
+        margin-top: 16px;
+    }
+     main  p{
+    max-width: 600px;
+     }
+     .content{
+        padding-top: 32px;
+        justify-content: center;
+        padding-bottom: 32px;
+     }
+     
+     #skills2 img{
+        transform: scale(0.9);
+     }
+     .projects-cell img{
+           transform: scale(0.7);  
+     }
+     #footer-row1{
+       flex-wrap: wrap;
+       flex-direction: column;
+       padding: 32px 16px;
+     }
+     #footer-row2{
+        flex-wrap: wrap;
+        flex-direction: column;
+       padding: 32px 16px;
+     }
+     #slogan{
+        font-size: 24px;
+     }
+     #footer-tools{
+        display: flex;
+      flex-direction: row;
+     }
+     #footer-tools div{
+        padding-right: 32px;
+     }
+    }/*.....................tablet ..................... */
+    /*...................... tablet 783 ..............*/
+
+    @media (max-width:840px){
+        #header-ul1{
+            display: none;
+        }
+    }
+/*......... Mobile ................................*/
+    @media (max-width: 550px){
+        .searchBar {
+            margin-right: 16px;
+        }
+        .searchIcon{
+            margin-right: 16px;
+        }
+        #header-ul1{
+            display: none;
+        }
+        header ul{
+            display: none;
+        }
+        main  p{
+            max-width: 400px;
+             }
+        #what-i-do-sec2{
+            flex-wrap: wrap ;
+            justify-content: center;
+        }
+        .hero-buttons{
+            display: flex;
+            flex-direction: column;
+        }
+        #btn1-hero, #btn2-hero{
+            width: 397px;
+            margin-top: 16px;
+        }
+         #tools{
+           position: absolute;
+           top: 200px;
+           left:16px;
+         }
+        #Projects{
+            margin-left: 16px;
+            margin-right: 16px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            transform-origin: 0%;
+           /* background-color: bisque;*/
+        }
+        #row1 , #row2{
+            
+           /* background-color: aquamarine;*/
+            
+        }
+        .projects-cell{
+           
+            /*background-color: brown;*/
+        }
+        .projects-cell img{
+           
+           
+        }   
+        #slogan{
+            font-size: 16px;
+         }
+         #footer-tools div{
+            padding-right: 16px;
+         }
+         #skills2 img{
+            transform: scale(0.8);
+        }
+        
+        .footer-info{
+            font-size: 12px;
+        }
+        #footer-row1{
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 32px 16px;
+            margin: 0px;
+          }
+          #footer-row2{
+            width: 100%;
+             flex-wrap: wrap;
+             flex-direction: column;
+            padding: 32px 16px;
+            margin: 0px;
+            /*background-color: aquamarine;*/
+          }
+    }
